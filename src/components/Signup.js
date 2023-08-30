@@ -26,7 +26,7 @@ const Signup = (props) => {
 
 const adddriver=async(e)=>{
   let numberf="+91"+number;
-  await fetch("http://localhost:5000/api/addDriver", {
+  await fetch("https://backend-cabzee.onrender.com/api/addDriver", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

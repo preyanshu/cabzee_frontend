@@ -32,7 +32,7 @@ const addrequest=async(addreq)=>{
   setIsAddingData(true);
   var element = document.getElementById("pills-requests");
   element.scrollTop = element.scrollHeight;
-  const response = await fetch("http://localhost:5000/api/addRequest/request", {
+  const response = await fetch("https://backend-cabzee.onrender.com/api/addRequest/request", {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',

@@ -62,14 +62,14 @@ const Req = (props) => {
   };
   
   const { data, error, isLoading } = useSWR(
-    "http://localhost:5000/api/fetchRequest/request/user",
+    "https://backend-cabzee.onrender.com/api/fetchRequest/request/user",
     fetcher,
     {
       refreshInterval: 1000
     }
   );
   const { data : data2, error : error2, isLoading:isLoading2 } = useSWR(
-    "http://localhost:5000/api/fetchRequest/recievedreq/user",
+    "https://backend-cabzee.onrender.com/api/fetchRequest/recievedreq/user",
     fetcher,
     {
       refreshInterval: 1000
@@ -78,7 +78,7 @@ const Req = (props) => {
 
 
   const { data : data3, error:error3, isLoading:isLoading3 } = useSWR(
-    "http://localhost:5000/api/fetchRequest/confirmedreq/user",
+    "https://backend-cabzee.onrender.com/api/fetchRequest/confirmedreq/user",
     fetcher,
     {
       refreshInterval: 1000

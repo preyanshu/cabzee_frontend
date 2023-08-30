@@ -23,13 +23,15 @@ function Login(props) {
   const [flag, setFlag] = useState(false);
   const [btn, setbtn] = useState(false);
   const [btn2, setbtn2] = useState(false);
+
+
   const [otp, setOtp] = useState("");
   const [result, setResult] = useState("");
   const [driver,setdriver]=useState()
   // const [otp, setOtp] = useState('');
   // const navigate=useNavigate();
   const getdriver= async (numberf)=>{
-    await fetch(`http://localhost:5000/api/addDriver/get/${numberf}`, {
+    await fetch(`https://backend-cabzee.onrender.com/api/addDriver/get/${numberf}`, {
       method: 'GET',
     }).then((data)=>{
       return data.json()

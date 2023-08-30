@@ -46,7 +46,7 @@ const Dreq = (props) => {
   },[])
 
   const addreq= async (object)=>{
-    await fetch("http://localhost:5000/api/addRequest/recievedreq", {
+    await fetch("https://backend-cabzee.onrender.com/api/addRequest/recievedreq", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -84,7 +84,7 @@ const Dreq = (props) => {
 
 
   const getdriver= async (numberf)=>{
-    await fetch(`http://localhost:5000/api/addDriver/get/${numberf}`, {
+    await fetch(`https://backend-cabzee.onrender.com/api/addDriver/get/${numberf}`, {
       method: 'GET',
     }).then((data)=>{
       return data.json()
@@ -144,21 +144,21 @@ const Dreq = (props) => {
     };
     
     const { data, error, isLoading } = useSWR(
-      "http://localhost:5000/api/fetchRequest/request/driver",
+      "https://backend-cabzee.onrender.com/api/fetchRequest/request/driver",
       fetcher,
       {
         refreshInterval: 2000
       }
     );
     const { data:data2, error:error2, isLoading:isLoading2 } = useSWR(
-      "http://localhost:5000/api/fetchRequest/recievedreq/driver",
+      "https://backend-cabzee.onrender.com/api/fetchRequest/recievedreq/driver",
       fetcher,
       {
         refreshInterval: 2000
       }
     );
     const { data:data3, error:error3, isLoading:isLoading3 } = useSWR(
-      "http://localhost:5000/api/fetchRequest/confirmedreq/driver",
+      "https://backend-cabzee.onrender.com/api/fetchRequest/confirmedreq/driver",
       fetcher,
       {
         refreshInterval: 2000
