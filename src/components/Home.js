@@ -6,6 +6,7 @@ import jwt_decode from 'jwt-decode'
 import  {  useEffect, useRef, useState } from 'react'
 import {useNavigate} from 'react-router-dom';
 import Login from './Login'
+import { Link, useLocation } from "react-router-dom";
 import './home.css'
 import {
   
@@ -313,7 +314,9 @@ of a button.
                         </div>
                         <div className="modal-footer">
                        < button ref={refClose} type="button" className="btn btn-secondary" style={{display:"none"}} data-bs-dismiss="modal">Close</button>
-                       <div className="text1 mx-3">Don,t have an account? <a href='/signup' style={{color:"black",textDecoration:"none"}}> <b>Sign up</b></a></div>
+                       <div className="text1 mx-3">Don,t have an account? <Link to='/signup' onClick={()=>{
+                        refClose.current.click()
+                       }} style={{color:"black",textDecoration:"none"}}> <b>Sign up</b></Link></div>
                             {/* <button type="button" className="btn btn-primary" onClick={close}>Update Note</button> */}
                         </div>
                     </div>

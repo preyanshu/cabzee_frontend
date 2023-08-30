@@ -84,7 +84,7 @@ function App() {
           
           
             <Routes>
-              <Route exact path="/" element={<Home  showAlert={showAlert}/>} />
+              <Route exact path="/" element={<Home showAlert={showAlert}></Home>} />
               <Route exact path="/userpanel" element={<Userpanel showAlert={showAlert}/>} />
               <Route exact path="/driverpanel" data={data} element={<Driverpanel showAlert={showAlert}></Driverpanel>} />
               <Route exact path="/signup" element={<Signup showAlert={showAlert}></Signup>} />
