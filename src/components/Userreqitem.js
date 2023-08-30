@@ -5,7 +5,7 @@ const Userreqitem = (props) => {
   const {req}=props;
 
   const addreq= async (object)=>{
-    await fetch("http://localhost:5000/api/addRequest/confirmedreq", {
+    await fetch("https://backend-cabzee.onrender.com/api/addRequest/confirmedreq", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -33,7 +33,7 @@ const Userreqitem = (props) => {
 
   const changestatus= async (object)=>{
     props.setload(true);
-    await fetch("http://localhost:5000/api/reqstatus", {
+    await fetch("https://backend-cabzee.onrender.com/api/reqstatus", {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
@@ -57,7 +57,7 @@ const Userreqitem = (props) => {
   }
   const changestatus2= async (object)=>{
     props.setload(true);
-    await fetch("http://localhost:5000/api/reqstatus/2", {
+    await fetch("https://backend-cabzee.onrender.com/api/reqstatus/2", {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
