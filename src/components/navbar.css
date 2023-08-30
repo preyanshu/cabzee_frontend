@@ -1,0 +1,23 @@
+#navbar{
+    background: #10001C;
+}
+.navbar-dark .navbar-brand {
+    color: #fff;
+    font-size: 2.2rem;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,.55);
+    margin-left: 23px;
+    margin-right: 23px;
+}
+.navbar-dark .navbar-brand {
+    color: #fff;
+    font-size: 2.2rem;
+    margin-right: 80px;
+    margin-left: 40px;
+}
+#logout:hover{
+    background-color: black;
+    border:2px solid white
+
+}

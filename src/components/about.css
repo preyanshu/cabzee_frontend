@@ -1,0 +1,66 @@
+.page_about{
+    /* height: 100vh; */
+    width: 100vw;
+    /* background-color: #56547A; */
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    padding: 0px 40px;
+
+}
+.back_about{
+     height: 100vh;
+     width: 100vw;
+     background-image: url("https://tb-static.uber.com/prod/bliss-helpdot/asset/images/landing-page-index.jpeg");
+     background-size: cover;
+     position: absolute;
+     top: 0px;
+     z-index: -1;
+     color:#10001C ;
+
+}
+.body{
+    font-family: UberMove, UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.about_card{
+    background-color: white;
+    width: 70%;
+    height: 80%;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+.page_content{
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+@media screen and (max-width: 440px){
+    .about_card{
+        background-color: white;
+        width: 70%;
+        height: 90%;
+        border: 3px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    .back_about{
+        height: 120vh;
+        width: 100vw;
+        background-image: url("https://tb-static.uber.com/prod/bliss-helpdot/asset/images/landing-page-index.jpeg");
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+        z-index: -1;
+        color:#10001C ;
+        
+   
+   }
+
+}

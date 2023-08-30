@@ -1,0 +1,283 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.content h4{
+    font-size: calc(0.8rem + 0.7vw);
+}
+#learnmore{
+    opacity: 1;
+
+}
+#learnmore:hover{
+    background-color: black;
+}
+.button:hover{
+    background-color: black;
+}
+#a{
+    width: 270px;
+    margin: 0px;
+    padding: 0px;
+}
+.text-left {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    align-items: center;
+    justify-content: start;
+    /* margin-top: 700px; */
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #050505;
+    background-color: black;
+    color: white;
+    min-width: 100px;
+    min-height: 45px;
+}
+.nav-pills .nav-link {
+    background: 0 0;
+    border: 0;
+    border-radius: 0.25rem;
+    /* color: white; */
+}
+.page_1{
+    height: 100vh;
+    width: 100vw;
+    background-color: #10001C;
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    
+
+}
+.page_2{
+    height: 120vh;
+    width: 100vw;
+    background-color: #10001C;
+    position: absolute;
+    top: 100vh;
+    z-index: -1;
+    display: flex;
+    /* align-items: center;
+     */
+    justify-content: center;
+    align-items:center ;
+    flex-direction: column;
+
+}
+.page_3{
+    height: 100vh;
+    width: 100vw;
+    background-color: #10001C;
+    position: absolute;
+    top: 220vh;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cardflex1{
+    width: 80%;
+    /* background-color: #050505; */
+    display: flex;
+    justify-content: flex-start;
+    /* margin: 10px;
+    padding: 10px; */
+}
+.cardflex2{
+    width: 80%;
+    /* background-color: #050505; */
+    display: flex;
+    justify-content: flex-end;
+    /* margin: 10px;
+    padding: 10px;
+} */
+}
+.cardflex3{
+    width: 80%;
+    /* background-color: #050505; */
+    display: flex;
+    justify-content: flex-start;
+    /* margin: 10px;
+    padding: 10px; */
+}
+.cardflex0{
+    width: 80%;
+    /* background-color: #050505; */
+    display: flex;
+    justify-content: center;
+     
+     padding: 10px; 
+     margin-bottom: 40px;
+     margin-top: 13px;
+     color: white;
+
+}
+.page_4{
+    height: "fit-content";
+    width: 100vw;
+    background-color:#56547A;
+    position: absolute;
+    top: 320vh;
+    z-index: -1;
+ 
+
+}
+
+@media screen and (max-width: 1200px) {
+ 
+    .page_2{
+        height: 230vh;
+        width: 100vw;
+        /* background-color: blue; */
+        position: absolute;
+        top: 100vh;
+        z-index: -1;
+        display: flex;
+        /* align-items: center;
+         */
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    
+    }
+    .page_3{
+      
+        top: 330vh;
+       
+        
+    
+    }
+    .page_4{
+      
+        top: 430vh;
+       
+        
+    
+    }
+    .cardflex1{
+        width: 80%;
+        /* background-color: #050505; */
+        display: flex;
+        justify-content: center;
+        /* margin: 10px;
+        padding-bottom: 30px; */
+    }
+    .cardflex2{
+        justify-content: center;
+    }
+    .cardflex3{
+        
+        justify-content: center;
+       
+    }
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+        align-items: center;
+        justify-content: space-evenly;
+        /* margin-top: 700px; */
+    }
+
+
+
+}
+@media screen and (max-width: 500px){
+    #a{
+        width: 170px;
+        margin: 0px;
+        padding: 0px;
+    }
+    #driverbtn{
+        width: 270px;
+    }
+    .text-left{
+        width: 170px;
+    }
+    .btntext{
+        width: 220px;
+        display: block;
+        font-size: large;
+        margin-left: 30px;
+    }
+    /* .pills-tab{
+        width: 100vw;
+    }
+    .pills-tab-content{
+        width: 100vw;
+    } */
+    
+
+#btn_img {
+    /* height: 30vh; */
+    width: 60vw;
+    height: auto;
+}
+}
+
+.text-left{
+    margin: 0px;
+    padding: 0px;
+}
+.card_home:hover{
+    scale: 1;
+}
+
+.div_1{
+    height: 25%;
+    width: 100%;
+    margin-top:3% ;
+    margin-bottom:3% ;
+    /* background-color: aqua; */
+    display: flex;
+    /* padding: 20px; */
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+.div_2{
+    height: 50%;
+    width: 100%;
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    margin-bottom:3% ;
+    color: #06043B;
+
+}
+.div_3{
+    height: 30%;
+    width: 100%;
+    /* background-color: black; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    margin-bottom:3% ;
+}

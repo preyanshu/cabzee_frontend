@@ -1,0 +1,40 @@
+.back_share{
+    height: 100vh;
+    width: 100vw;
+    /* background-image: url("404-Illustration.png"); */
+    /* background-color: antiquewhite; */
+    background-color: #56547A;
+    position: absolute;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -2;
+}
+.back_share img{
+    height: 97%;
+    width: auto;
+   opacity: 1;
+   /* position: absolute; */
+   max-width: 100%;
+
+}
+
+@media screen and (max-width: 800px) {
+ 
+    .back_share img{
+        width: 97%;
+        height: auto;
+       opacity: 1;
+       /* position: absolute; */
+       max-width: 100%;
+    
+    }
+    
+   
+   
+   
+   }
+   
